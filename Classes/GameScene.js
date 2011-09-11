@@ -17,6 +17,7 @@
 				this.addEventListener( 'touchmove', bind( this.inputManager.onTouchMove, this.inputManager ) );
 				this.addEventListener( 'touchstart', bind( this.inputManager.onTouchStart, this.inputManager ) );
 				this.addEventListener( 'touchend', bind( this.inputManager.onTouchEnd, this.inputManager ) );
+				this.addEventListener( 'enterframe', bind( this.inputManager.onEnterFrame, this.inputManager ) );
 				var player = new Player();
 				this.inputManager.addReceiver( player );
 			}
